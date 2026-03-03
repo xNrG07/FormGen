@@ -34,7 +34,7 @@
 <header class="page-hero">
   <div class="container">
     <h1>Datenschutzerkl&auml;rung</h1>
-    <p>Gem&auml;&szlig; Art.&nbsp;13 und 14 DSGVO &ndash; Stand: 02.03.2026</p>
+    <p>Gem&auml;&szlig; Art.&nbsp;13 und 14 DSGVO &ndash; Stand: 03.03.2026</p>
   </div>
 </header>
 <main class="text-page" id="main-content">
@@ -44,17 +44,23 @@
   E-Mail: <a href="mailto:kontakt@vorlagen-generator.example">kontakt@vorlagen-generator.example</a></p>
 
   <h2>2. Welche Daten verarbeiten wir?</h2>
+  <h2>2a. Hosting (Netlify)</h2>
+  <p>Diese Website wird über den Hosting-Anbieter <strong>Netlify</strong> bereitgestellt. Beim Aufruf der Website können technisch notwendige Server-Logdaten (z.&nbsp;B. IP-Adresse, Datum/Uhrzeit, angeforderte Seite, User-Agent) verarbeitet werden, um den sicheren Betrieb und die Auslieferung der Inhalte zu ermöglichen.</p>
+
+  <h2>2b. Externe Schriftarten (Google Fonts)</h2>
+  <p>In der aktuellen Version werden Schriftarten über <strong>Google Fonts</strong> geladen. Dadurch wird beim Seitenaufruf eine Verbindung zu Servern von Google hergestellt (u.&nbsp;a. zur Übermittlung Ihrer IP-Adresse). Wenn Sie das vermeiden möchten, sollten die Schriftarten lokal gehostet oder durch System-Schriftarten ersetzt werden.</p>
+
   <p>Diese Website ist darauf ausgelegt, m&ouml;glichst wenige Daten zu verarbeiten. Im Generator eingegebene Daten (Name, Adresse etc.) werden <strong>ausschlie&szlig;lich lokal im Browser</strong> verarbeitet und nicht an unsere Server &uuml;bertragen oder gespeichert.</p>
 
   <h3>Zugriffsprotokolle des Webservers</h3>
   <p>Beim Aufruf unserer Website speichert der Webserver automatisch technische Zugriffsdaten (IP-Adresse, Datum/Uhrzeit, aufgerufene Seite, Browser-Typ). Diese Daten dienen der technischen Sicherheit und werden sp&auml;testens nach 30 Tagen gel&ouml;scht. Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigtes Interesse).</p>
 
   <h2>3. Cookies und lokaler Speicher</h2>
-  <p>Wir verwenden <code>localStorage</code> im Browser, um Ihre Cookie-Einwilligung zu speichern (Schl&uuml;ssel: <code>vg_consent</code>). Es werden keine Tracking-Cookies gesetzt. Sie k&ouml;nnen den gespeicherten Wert jederzeit in den Browser-Einstellungen l&ouml;schen.</p>
+  <p>Wir verwenden <code>localStorage</code> im Browser, um Ihre Cookie-Einwilligung zu speichern (Schl&uuml;ssel: <code>vg_consent</code>). Wir setzen selbst keine Tracking-Cookies. Im Rahmen von Google AdSense können nach Einwilligung Cookies bzw. ähnliche Identifier gesetzt werden. Sie k&ouml;nnen den gespeicherten Wert jederzeit in den Browser-Einstellungen l&ouml;schen.</p>
 
   <h2>4. Werbung (Google AdSense)</h2>
   <p>Diese Website verwendet Werbeplatzhalter f&uuml;r Google AdSense. Ohne Ihre Einwilligung werden keine personalisierten Werbeanfragen gesendet (<code>pauseAdRequests=1</code>). Nach Ihrer Einwilligung kann Google AdSense Cookies setzen und Ihre Nutzungsdaten f&uuml;r personalisierte Werbung verwenden.</p>
-  <p><strong>Hinweis:</strong> F&uuml;r eine vollst&auml;ndig DSGVO-konforme Einbindung von Google AdSense ist eine nach IAB TCF&nbsp;2.0 zertifizierte Consent Management Platform (CMP) erforderlich. Diese Demo-Website nutzt eine vereinfachte Consent-Bar zu Demonstrationszwecken.</p>
+  <p><strong>Hinweis:</strong> F&uuml;r eine vollst&auml;ndig DSGVO-konforme Einbindung von Google AdSense ist eine nach IAB TCF&nbsp;2.3 zertifizierte Consent Management Platform (CMP) erforderlich. Diese Demo-Website nutzt eine vereinfachte Consent-Bar zu Demonstrationszwecken.</p>
 
   <h2>5. Ihre Rechte</h2>
   <p>Sie haben gem&auml;&szlig; DSGVO folgende Rechte:</p>
@@ -91,7 +97,7 @@
     </ul></div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2026 VorlagenGenerator.example &ndash; Stand: 02.03.2026</span>
+    <span>&copy; 2026 VorlagenGenerator.example &ndash; Stand: 03.03.2026</span>
     <span>Kein Ersatz fuer Rechtsberatung.</span>
   </div>
 </footer>
@@ -106,7 +112,6 @@
   </div>
 </div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script src="/assets/templates.js"></script>
-<script src="/assets/app.js"></script>
+<script type="module" src="/assets/app.js"></script>
 </body>
 </html>

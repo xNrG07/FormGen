@@ -10,6 +10,8 @@
    CMP-Integration erforderlich. Diese Demo-Implementierung
    dient nur zur Veranschaulichung.
    ─────────────────────────────────────────────────────────── */
+import { TEMPLATES, getTemplateById } from './templates.js';
+
 (window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
 
 const CONSENT_KEY = 'vg_consent';

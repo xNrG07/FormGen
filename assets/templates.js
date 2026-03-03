@@ -2,7 +2,7 @@
    templates.js – Vorlagen-Daten
    ============================================================ */
 
-const TEMPLATES = [
+export const TEMPLATES = [
   {
     id: "kuendigung",
     title: "Kündigung (Allgemein)",
@@ -445,8 +445,8 @@ Mit freundlichen Grüßen
 
   {
     id: "widerspruch-bescheid",
-    title: "Widerspruch gegen Bescheid",
-    description: "Gegen einen behördlichen Bescheid fristgerecht Widerspruch einlegen.",
+    title: "Widerspruch gegen Bescheid (DE)",
+    description: "Deutschland: Gegen einen behördlichen Bescheid fristgerecht Widerspruch einlegen (AT: häufig \"Beschwerde\" – bitte prüfen).",
     icon: "🏛️",
     category: "Behörden",
     url: "generator.html?template=widerspruch-bescheid",
@@ -512,6 +512,6 @@ Mit freundlichen Grüßen
   }
 ];
 
-function getTemplateById(id) {
+export function getTemplateById(id) {
   return TEMPLATES.find(t => t.id === id) || null;
 }
