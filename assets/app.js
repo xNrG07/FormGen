@@ -1,15 +1,4 @@
-/* ============================================================
-   app.js – Hauptlogik: Consent, Navigation, Generator, FAQ
-   ============================================================ */
 
-/* ── AdSense Consent-Steuerung ──────────────────────────────
-   Default: Ad Requests pausiert (DSGVO-konform)
-   Personalisierung nur nach expliziter Zustimmung.
-   Hinweis: Für eine vollständig zertifizierte CMP (z. B. für
-   Google-zertifizierte Einwilligung) ist eine offizielle
-   CMP-Integration erforderlich. Diese Demo-Implementierung
-   dient nur zur Veranschaulichung.
-   ─────────────────────────────────────────────────────────── */
 import { TEMPLATES, getTemplateById } from './templates.js';
 
 (window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
@@ -48,11 +37,7 @@ function initConsent() {
   bar.querySelector('.consent-btn-reject').addEventListener('click', () => {
     setConsent('reject'); applyConsent('reject'); bar.classList.remove('visible');
   });
-  bar.querySelector('.consent-btn-settings').addEventListener('click', () => {
-    // In Produktion: erweiterte CMP öffnen
-    alert('Hinweis: Für vollständige Einstellungen wird eine zertifizierte CMP benötigt.\nAktuell: Werbung ohne Personalisierung.');
-    setConsent('reject'); applyConsent('reject'); bar.classList.remove('visible');
-  });
+
 }
 
 /* ── Mobile Navigation ──────────────────────────────────── */
@@ -376,7 +361,7 @@ function initContact() {
     const email   = form.querySelector('[name=email]').value;
     const subject = form.querySelector('[name=subject]').value || 'Kontaktanfrage';
     const message = form.querySelector('[name=message]').value;
-    const mailto  = `mailto:kontakt@vorlagen-generator.example?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nE-Mail: ${email}\n\n${message}`)}`;
+    const mailto  = `mailto:peter.markelic1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nE-Mail: ${email}\n\n${message}`)}`;
     window.location.href = mailto;
   });
 }

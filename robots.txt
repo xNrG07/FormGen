@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /404.html
-Sitemap: https://www.vorlagen-generator.example/sitemap.xml
+Disallow: /assets/
+
+Sitemap: https://www.vorlagen-generator.at/sitemap.xml
