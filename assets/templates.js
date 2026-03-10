@@ -218,7 +218,7 @@ Bestellung: {bestellung}
 Bestelldatum: {bestell_datum}
 Erhalt der Ware: {erhalt_datum}
 {rueckgabe_info_zeile}
-Ich bitte um Bestätigung des Widerrufs sowie um Rückerstattung des Kaufpreises.
+Ich bitte um Bestätigung des Widerrufs sowie um Rückerstattung des Kaufpreises nach den gesetzlichen Vorgaben.
 
 Mit freundlichen Grüßen
 
@@ -237,7 +237,7 @@ Sehr geehrte Damen und Herren,
 
 ich möchte von meinem gesetzlichen Widerrufsrecht Gebrauch machen und widerrufe meine Bestellung ({bestellung}, aufgegeben am {bestell_datum}, erhalten am {erhalt_datum}).
 {rueckgabe_info_zeile}
-Bitte bestätigen Sie den Widerruf und veranlassen Sie die Rückerstattung. Vielen Dank für Ihr Verständnis.
+Bitte bestätigen Sie den Widerruf und veranlassen Sie die Rückerstattung nach den gesetzlichen Vorgaben. Vielen Dank für Ihr Verständnis.
 
 Mit freundlichen Grüßen
 
@@ -261,7 +261,7 @@ Bestelldatum: {bestell_datum}
 Warenzugang: {erhalt_datum}
 Rechtsgrundlage: § 11 FAGG / § 355 BGB i.V.m. EU-Verbraucherrechterichtlinie 2011/83/EU.
 {rueckgabe_info_zeile}
-Ich erwarte die vollständige Rückerstattung des Kaufpreises binnen 14 Tagen.
+Ich erwarte die vollständige Rückerstattung des Kaufpreises innerhalb der gesetzlichen Frist.
 
 Mit freundlichen Grüßen
 
@@ -287,8 +287,7 @@ Mit freundlichen Grüßen
       { id: "zahlungsfrist",      label: "Neue Zahlungsfrist bis",                   type: "text",     placeholder: "16.03.2026" }
     ],
     optionalFields: [
-      { id: "mahnung_nr",         label: "Mahnstufe (1. / 2. / 3. Mahnung)",        type: "text",     placeholder: "1. Mahnung" },
-      { id: "mahngebuehr",        label: "Mahngebühr (optional)",                   type: "text",     placeholder: "€ 10,00 Bearbeitungsgebühr" }
+      { id: "mahnung_nr",         label: "Mahnstufe (1. / 2. / 3. Mahnung)",        type: "text",     placeholder: "1. Mahnung" }
     ],
     toneOptions: ["neutral", "freundlich", "bestimmt"],
     bodyTemplate: {
@@ -308,7 +307,7 @@ möglicherweise hat sich Ihre Zahlung mit diesem Schreiben gekreuzt. Falls nicht
 
 Rechnungsnummer: {rechnungsnummer}
 Rechnungsdatum: {rechnungsdatum}
-Offener Betrag: {rechnungsbetrag}{mahngebuehr_zeile}
+Offener Betrag: {rechnungsbetrag}
 
 Wir bitten um Überweisung bis spätestens {zahlungsfrist}.
 
@@ -354,7 +353,7 @@ trotz unserer vorherigen Zahlungsaufforderung ist folgende Rechnung weiterhin un
 
 Rechnungsnummer: {rechnungsnummer}
 Rechnungsdatum: {rechnungsdatum}
-Offener Betrag: {rechnungsbetrag}{mahngebuehr_zeile}
+Offener Betrag: {rechnungsbetrag}
 
 Wir setzen Ihnen hiermit eine letzte Frist bis {zahlungsfrist}. Nach Ablauf werden wir ohne weitere Ankündigung rechtliche Schritte einleiten.
 
